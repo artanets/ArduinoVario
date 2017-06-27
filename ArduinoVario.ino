@@ -34,7 +34,9 @@ float second = 0.0; // second filter funktion
 void setup()
 {
   bmp.begin();
-  z , y = bmp.readAltitude(100900); // filling y with data for first step
+  z , y = bmp.readAltitude(100900); // filling z ,y with data for first step 
+  //(100900) is a preasure on sea level must be changed due to your weather (can change altitude from 8 to ~30 m)*
+  
   Serial7Segment.begin(9600); //Talk to the Serial7Segment at 9600 bps
   Serial7Segment.write('v'); //Reset the display - this forces the cursor to return to the beginning of the display
   Serial7Segment.write(0x7A);  // Brightness control command
