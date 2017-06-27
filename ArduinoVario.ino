@@ -17,18 +17,18 @@ float x = 0.0; // main reading of altitude
 float y = 0.0; // saved last reading
 float z = 0.0; // prediction for didgital filter
 float a = 0.0; // temporal storage for height for filter
-float limit = 0.3; //altitude steps for filtering (sensativity of filtration from 0.2 -0.6)
+float limit = 0.3; //altitude steps for filtering (sensativity of filtration from 0.2 -0.6)*
 int count = 0; // main timer 
 int count1 = 0; // display timer
 int lim1 = 9; // changebl amount of iterations for filter
-int lim2 = 45;// constant amount of iterations for filter (can be canged from 10 to ~60)
+int lim2 = 45;// constant amount of iterations for filter (can be canged from 10 to ~60)*
 int sound = 500; // time of beaping in ms
 int freq = 500; // frequency of sound
 int digit = 0; // used for display
 char tempString[4]; // used for display
 bool lach = true; // used to reset frequency, sound and amount of iterations after altitude stop changing
 float mainf = 0.0; //main filter funktion
-float second = 0.0; // second ilter funktion
+float second = 0.0; // second filter funktion
 
 
 void setup()
